@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?size=626&ext=jpg&ga=GA1.1.68522942.1696925496&semt=ais);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.download-btn{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    color: black;
+    justify-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.download-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+a span{
+    position: relative;
+    width: 1.5rem;
+    visibility: hidden;
+}
+
+a span:after{
+    content: '\21d3';
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 10px;
+    animation: down 1s linear infinite;
+}
+
+@keyframes down{
+    from{
+        top:-10px;
+        opacity: 0;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CertStyle.css">
+</head>
+<body>
+    <h1>What is Your Name</h1>
+    <a href="download.php?file=format" download class="download-btn" >
+        Download Certificate <span></span>
+        <i class="fa fa-download" aria-hidden="true"></i>
+    </a>
+
+    <script>
+        let button = document.querySelector("download-btn");
+        button.addEventListener("click",()=>{
+            const span = document.querySelector("download-btn span");
+            button.style.paddingRight = "10px";
+            span.style.visibility = "visible";
+            setTimeout(()=>{
+                span.style.visibility = "hidden";
+                button.style.paddingRight = "0px";
+            },1000);
+        })
+    </script>
+</body>
+</html>
